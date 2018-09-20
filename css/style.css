@@ -806,6 +806,13 @@ img {
 .more-reviews {
 	padding-bottom: 150px;
 }
+.more-reviews a {
+	text-decoration: none;
+}
+
+.more-reviews a:hover {
+	text-decoration: none;
+}
 
 .more-rewievs-heading {
 	color: #999ea8;
@@ -916,7 +923,7 @@ img {
 }
 
 .choose-plan-info {
-	max-width: 370px;
+	max-width: 100%;
 	font-family: 'Nunito Sans', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
@@ -1014,15 +1021,33 @@ img {
 	text-align: left;
 	padding: 0;
 	margin-bottom: 30px;
+	
 }
 
 .pro-list-item {
-	font-family: NunitoSans;
+	position: relative;
+	font-family: 'Nunito Sans', sans-serif;
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 30px;
 	padding-left: 80px
 }
+
+.pro-list-item:before {
+	content: "";
+	
+	width: 16px;
+	height: 12px;
+	margin: 0 auto;
+	position: absolute;
+	top: 8px; left: 0; bottom: 0;     right: 195px;
+
+	
+	background-image: url(../img/SuccessIconWhite.png);
+	background-size: cover;
+}
+
+
 
 .button-buy-now {
 	width: 250px;
@@ -1092,7 +1117,22 @@ img {
 	font-weight: 400;
 	font-size: 15px;
 	line-height: 30px;
-	padding-left: 80px
+	padding-left: 80px;
+	position: relative;
+}
+
+.starter-list-item:before {
+	content: "";
+	
+	width: 16px;
+	height: 12px;
+	margin: 0 auto;
+	position: absolute;
+	top: 8px; left: 0; bottom: 0;     right: 205px;
+
+	
+	background-image: url(../img/SuccessIconBlack.png);
+	background-size: cover;
 }
 
 .button-get-free {
@@ -1185,7 +1225,7 @@ img {
 }
 
 .contact-form-message {
-	width: 650px;
+	width: 654px;
 	height: 140px;
 	background-color: #f8f9fa;
 	color: #b9bdc3;
@@ -1240,6 +1280,7 @@ img {
 .contact-wrapper {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .footer-logo {
@@ -1318,6 +1359,25 @@ img {
 	.header-tablet-image {
 		width: 40%;
 	}
+	.site-list-item {
+
+  	font-family: 'Nunito Sans', sans-serif;
+  	font-size: 15px;
+  	font-weight: 400;
+  	margin-right: 15px;
+  	
+  	
+}
+
+	.get-free {
+	font-family: 'Nunito Sans', sans-serif;
+	width: 100px;
+ 	height: 40px;
+ 
+	letter-spacing: 1px;
+  
+
+}
 
 	.reviews {
 		display: none;
@@ -1352,6 +1412,22 @@ img {
 	.feature-track:before {
 		left: -265px;
 	}
+
+	.pro-list-item:before {
+
+	top: 8px; left: 0; bottom: 0;     right: 165px;
+
+
+	}
+.starter-list-item:before {
+
+	top: 8px; left: 0; bottom: 0;     right: 175px;
+
+	}
+	.button-contact-submit {
+		margin-bottom: 0;
+	}
+
 
 
 
@@ -1397,7 +1473,7 @@ img {
 		left: -220px;
 	}
 	.download {
-		padding: 60 0;
+		padding: 60px 0;
 	}
 	.download-heading {
 		font-size: 30px;
@@ -1439,7 +1515,7 @@ img {
 		width: 85%;
 	}
 	.video {
-		padding: 100px 0;
+		padding: 60px 0 ;
 	}
 	.video-heading {
 		font-size: 30px;
@@ -1454,11 +1530,11 @@ img {
 		font-size: 15px;
 	}
 	.pro-heading {
-		padding: 10px 0;
+		padding: 13px 11px;
 	}
 
 	.starter-heading {
-		padding: 10px 0;
+		padding: 13px 11px;
 	}
 	.promocode {
 		margin-bottom: 10px;
@@ -1471,6 +1547,19 @@ img {
 		padding-left: 50px;
 
 	}
+
+	.pro-list-item:before {
+
+	top: 8px; left: 0; bottom: 0;     right: 135px;
+
+
+	}
+.starter-list-item:before {
+
+	top: 8px; left: 0; bottom: 0;     right: 145px;
+
+	}
+
 	.starter-price {
 		font-size: 40px;
 	}
@@ -1487,6 +1576,9 @@ img {
 	.button-get-free {
 		width: 150px;
 		height: 40px;
+	}
+	.contact {
+		padding: 60px 0;
 	}
 	.contact-form {
 		padding: 30px;
@@ -1522,6 +1614,23 @@ img {
 
 
 @media screen and (max-width: 768px) {
+	.page-header {
+		    padding-bottom: 80px;
+
+	}
+
+	.row.navigation {
+		justify-content: space-between;
+	}
+
+	#logo-info {
+		width: initial;
+	}
+	
+	#main-nav {
+		width: initial;
+	}
+
 	.site-list {
 		display: none;
 	}
@@ -1578,7 +1687,7 @@ img {
 
 	}
 	.proposition-item-info {
-		margin-bottom: 40px;
+		margin-bottom: 30px;
 	}
 	.plans {
 		display: block;
@@ -1588,12 +1697,24 @@ img {
 
 	.plan {
 		text-align: center;
-		padding: 100px 0;
+		padding: 60px 0;
 
 	}
 
 	.pro-heading {
 		margin-top: 20px;
+	}
+
+		.pro-list-item:before {
+
+	top: 8px; left: 0; bottom: 0;     right: 255px;
+
+
+	}
+	.starter-list-item:before {
+
+	top: 8px; left: 0; bottom: 0;     right: 275px;
+
 	}
 
 	.starter-heading {
@@ -1611,8 +1732,11 @@ img {
 		padding-top: 20px;
 		width: 335px;
 		    margin: 0 auto;
+		border-radius: 12px;
 
 	}
+
+
 	.choose-plan {
 		margin-bottom: 20px;
 	}
@@ -1621,17 +1745,22 @@ img {
 	    margin-top:0;
 
 	}
-	.contact-form-message {
-		width: 250px;
+	.contact-form {
+		padding: 11px 20px 18px;
 	}
-	.button-contact-submit {
-		margin-bottom: 0;
+	.contact-form-name, 
+	.contact-form-email, 
+	.contact-form-country, 
+	.contact-form-city {
+		width: 100%; margin: 10px 0;
 	}
 
-	.contact-wrapper {
-		display: block;
+	.contact-form-message {
+
+		width: 100%;
 	}
 	
+
 	.footer-logo {
 		text-align: center;
 	}
@@ -1663,13 +1792,25 @@ img {
 		margin-bottom: 10px;
 	}
 		.plan-item-pro {
-		width: 280px;
+		width: 100%;
 		    margin: 0 auto;
+		    margin-bottom: 20px;
 
 	}
 	.plan-item-starter {
-		width: 300px;
+		width: 100%;
 		margin: 0 auto;
+
+	}
+		.pro-list-item:before {
+
+	top: 8px; left: 0; bottom: 0;     right: 215px;
+
+
+	}
+.starter-list-item:before {
+
+	top: 8px; left: 0; bottom: 0;     right: 235px;
 
 	}
 
@@ -1688,4 +1829,8 @@ img {
 	    
 
 	}
+		.contact-wrapper {
+		display: block;
+	}
+	
 }
