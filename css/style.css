@@ -1592,12 +1592,23 @@ img {
 
 	}
 
+	.pro-heading {
+		margin-top: 20px;
+	}
+
+	.starter-heading {
+		margin-top: 20px;
+	}
+
 	.plan-item-pro {
+		padding-top: 20px;
 		width: 320px;
 		    margin: 0 auto;
+		    margin-bottom: 20px;
 
 	}
 	.plan-item-starter {
+		padding-top: 20px;
 		width: 335px;
 		    margin: 0 auto;
 
