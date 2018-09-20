@@ -1361,9 +1361,6 @@ img {
 	}
 	.site-list-item {
 
-  	font-family: 'Nunito Sans', sans-serif;
-  	font-size: 15px;
-  	font-weight: 400;
   	margin-right: 15px;
   	
   	
@@ -1373,8 +1370,8 @@ img {
 	font-family: 'Nunito Sans', sans-serif;
 	width: 100px;
  	height: 40px;
- 
-	letter-spacing: 1px;
+ 	font-weight: 800;
+	
   
 
 }
@@ -1437,6 +1434,23 @@ img {
 @media screen and (max-width: 992px) {
 	.page-header {
 		padding-bottom: 110px;
+	}
+		.row.navigation {
+		justify-content: space-between;
+	}
+
+	#logo-info {
+		width: initial;
+	}
+	
+	#main-nav {
+		width: initial;
+		justify-content: flex-end;
+		
+	}
+
+	.site-list {
+		display: none;
 	}
 	.header-heading {
 		font-size: 30px;
@@ -1539,6 +1553,32 @@ img {
 	.promocode {
 		margin-bottom: 10px;
 	}
+	.plan {
+		padding-top:  60px;
+		padding-bottom: 80px;
+	}
+	.plan-row {
+		display: block !important;
+		text-align: center;
+	}
+	.choose-plan {
+		margin: 0 auto;
+		margin-bottom: 50px;
+	}
+	.choose-plan-heading {
+		margin-top: 0;
+	}
+	.plans {
+		justify-content: center;
+		max-width: 100% !important;
+		width: 100% ;
+	}
+	.plan-item-pro {
+		width: 325px;
+	}
+	.plan-item-starter {
+		width: 325px;
+	}
 	.pro-price {
 		font-size: 50px;
 	}
@@ -1550,13 +1590,13 @@ img {
 
 	.pro-list-item:before {
 
-	top: 8px; left: 0; bottom: 0;     right: 135px;
+	top: 8px; left: 0; bottom: 0;     right: 255px;
 
 
 	}
 .starter-list-item:before {
 
-	top: 8px; left: 0; bottom: 0;     right: 145px;
+	top: 8px; left: 0; bottom: 0;     right: 265px;
 
 	}
 
@@ -1619,21 +1659,7 @@ img {
 
 	}
 
-	.row.navigation {
-		justify-content: space-between;
-	}
 
-	#logo-info {
-		width: initial;
-	}
-	
-	#main-nav {
-		width: initial;
-	}
-
-	.site-list {
-		display: none;
-	}
 	.navigation {
 		padding: 20px 0;
 	}
@@ -1707,13 +1733,13 @@ img {
 
 		.pro-list-item:before {
 
-	top: 8px; left: 0; bottom: 0;     right: 255px;
+	top: 8px; left: 0; bottom: 0;     right: 80%;
 
 
 	}
 	.starter-list-item:before {
 
-	top: 8px; left: 0; bottom: 0;     right: 275px;
+	top: 8px; left: 0; bottom: 0;     right: 80%;
 
 	}
 
@@ -1731,8 +1757,10 @@ img {
 	.plan-item-starter {
 		padding-top: 20px;
 		width: 335px;
-		    margin: 0 auto;
+		margin: 0 auto;
 		border-radius: 12px;
+		border: 1px solid #e6e5e5;
+
 
 	}
 
@@ -1778,6 +1806,12 @@ img {
 
 	}
 }
+@media screen and (max-width: 402px) {
+	.promocode {
+		width: 100%;
+		margin-right: 0;
+	}
+}
 
 @media screen and (max-width: 372px) {
 	.download-button {
@@ -1802,17 +1836,7 @@ img {
 		margin: 0 auto;
 
 	}
-		.pro-list-item:before {
-
-	top: 8px; left: 0; bottom: 0;     right: 215px;
-
-
-	}
-.starter-list-item:before {
-
-	top: 8px; left: 0; bottom: 0;     right: 235px;
-
-	}
+	
 
 	.contact-form-name,
 	.contact-form-email,
