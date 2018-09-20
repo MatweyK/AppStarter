@@ -677,7 +677,7 @@ img {
 
 }
 .proposition-image img {
-	margin:  90px 90px 0 90px;
+	margin:  90px 0 0 90px;
 	width: 374px;
 	height: 444px;
 	border-top-style: solid;
@@ -1278,10 +1278,11 @@ img {
 }
 
 .contact-wrapper {
-	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
+
+
 
 .footer-logo {
 	font-family: 'Nunito Sans', sans-serif;
@@ -1295,9 +1296,10 @@ img {
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
-	width: 120px;
-	margin: 0 auto;
+	justify-content: flex-end;
+	
+	margin-right: 60px;
+
 	padding: 0;
 	
 }
@@ -1397,7 +1399,7 @@ img {
 
 	}
     .proposition-image img {
-		margin: 90px 90px 0 40px;
+		margin: 90px 0 0 40px;
 	}
 
 	.feature-sync:before {
@@ -1797,8 +1799,10 @@ img {
 		padding: 10px;
 	}
 
+
 	.social-list {
 		width: 90px;
+		margin: 0 auto;
 	}
 	.social-button {
 		width: 30px;
