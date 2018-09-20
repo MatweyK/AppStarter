@@ -209,7 +209,7 @@ img {
 }
  
 /* активное состояние, т.е. меню открыто */
-/*.cmn-toggle-switch.active {
+.cmn-toggle-switch.active {
   background-color: #cb0032;
 }
  
@@ -235,8 +235,14 @@ img {
 .cmn-toggle-switch.active span::after {
   -webkit-transition-delay: 0, 0.3s;
           transition-delay: 0, 0.3s;
-}*/
+}
 /*burger end*/
+
+.dropdown-item a {
+	text-decoration: none;
+	color: #000000;
+}
+
 .logo-info {
 	font-family: 'Nunito Sans', sans-serif;
 	margin: 0;
@@ -1525,6 +1531,7 @@ img {
 	}
 	.contact-form-message {
 		width: 520px;
+		margin: 10px auto 10px auto;
 
 	}
 	.button-contact-submit {
@@ -1570,13 +1577,13 @@ img {
 	}
 
 	.feature-sync:before {
-		left: -260px;
+		left: -80%;
 	}
 	.feature-emails:before {
-		left: -260px;
+		left: -80%;
 	}
 	.feature-track:before {
-		left: -260px;
+		left: -80%;
 	}
 	.download {
 		text-align: center;
@@ -1596,10 +1603,27 @@ img {
 	.proposition-item-info {
 		margin-bottom: 40px;
 	}
+	.plans {
+		display: block;
+
+	}
+
 
 	.plan {
 		text-align: center;
 		padding: 100px 0;
+
+	}
+
+	.plan-item-pro {
+		width: 320px;
+		    margin: 0 auto;
+
+	}
+	.plan-item-starter {
+		width: 335px;
+		    margin: 0 auto;
+
 	}
 	.choose-plan {
 		margin-bottom: 20px;
@@ -1615,15 +1639,65 @@ img {
 	.button-contact-submit {
 		margin-bottom: 0;
 	}
-	.copyright {
-		padding: 0 10px;
+
+	.contact-wrapper {
+		display: block;
 	}
+	
+	.footer-logo {
+		text-align: center;
+	}
+
+	.copyright-info {
+		padding: 10px;
+	}
+
 	.social-list {
 		width: 90px;
 	}
 	.social-button {
 		width: 30px;
 		height: 30px;
+
+	}
+}
+
+@media screen and (max-width: 372px) {
+	.download-button {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+
+	.button-buy {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 10px;
+	}
+		.plan-item-pro {
+		width: 280px;
+		    margin: 0 auto;
+
+	}
+	.plan-item-starter {
+		width: 300px;
+		margin: 0 auto;
+
+	}
+
+	.contact-form-name,
+	.contact-form-email,
+	.contact-form-country,
+	.contact-form-city {
+		width: 200px;
+		height: 40px;
+	    margin: 10px;
+
+	}
+	.contact-form-message {
+		width: 200px;
+	    height: 140px;
+	    
 
 	}
 }
