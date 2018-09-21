@@ -1816,6 +1816,10 @@ img {
 		width: 100%;
 		margin-right: 0;
 	}
+	.download-button {
+		margin-right: 10px;
+	}
+
 }
 
 @media screen and (max-width: 372px) {
@@ -1849,7 +1853,7 @@ img {
 	.contact-form-city {
 		width: 100%;
 		height: 40px;
-	    margin: 10px;
+	    
 
 	}
 	.contact-form-message {
